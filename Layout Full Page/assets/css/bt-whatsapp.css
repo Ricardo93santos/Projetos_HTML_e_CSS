@@ -1,0 +1,53 @@
+.btn-whatsapp{
+  position: fixed;
+  background-color: rgb(68, 221, 81);
+  border-radius: 50%;
+  color: #fff;
+  right: 75px;
+  bottom: 35px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 79px;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+.btn-whatsapp::after, .btn-whatsapp::before{
+  animation: animate 1.5s linear infinite;
+  backface-visibility:hidden; 
+  border: 1px solid #25d366;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  top: -20px;
+}
+.pulsaDelay::after{
+  animation-delay: .5s;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .btn-whatsapp{
+    right: 15px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 1.8em;
+  }
+} 

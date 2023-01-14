@@ -14,3 +14,14 @@
   --text-fz-two: 1.1rem;
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
+body{
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+  "header"
+  "main"
+  "footer"
+}
+@media (max-width:425px) {
+
+}
