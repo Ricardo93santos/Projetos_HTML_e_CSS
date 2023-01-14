@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root{
+  --bg-color: #F2F2F2;
+  --primary-color: #000;
+  --secondary-color: #000;
+  --ternary-color: #000;
+  --text-fz-one: 1.6rem;
+  --text-fz-two: 1.1rem;
+  --links-position: flex-end; /*center, flex-end, flex-start*/
+}
