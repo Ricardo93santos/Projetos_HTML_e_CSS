@@ -10,8 +10,9 @@
   --primary-color: #000;
   --secondary-color: #000;
   --ternary-color: #000;
-  --text-fz-one: 1.6rem;
-  --text-fz-two: 1.1rem;
+  --text-fz-one: 1.1rem;
+  --text-fz-two: 1.4rem;
+  --text-fz-three: 1.7rem;
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
 body{
