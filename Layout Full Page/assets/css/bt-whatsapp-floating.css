@@ -1,4 +1,4 @@
-.btn-whatsapp{
+.btn-whatsapp-floating{
   position: fixed;
   background-color: var(--bt-whats-color);
   border-radius: 50%;
@@ -12,7 +12,7 @@
   font-size: 2.5em;
   font-weight: 100;
 }
-.btn-whatsapp::after, .btn-whatsapp::before{
+.btn-whatsapp-floating::after, .btn-whatsapp-floating::before{
   animation: animate 1.5s linear infinite;
   backface-visibility:hidden; 
   border: 1px solid var(--bt-whats-color);
@@ -43,7 +43,7 @@
   }
 }
 @media (max-width: 768px) {
-  .btn-whatsapp{
+  .btn-whatsapp-floating{
     right: 25px;
     width: 55px;
     height: 55px;
