@@ -1,0 +1,12 @@
+
+.btn-whatsapp-fixed{
+  background-color: var(--bt-whats-color);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 17px 14px;
+  font-size: 1.1rem;
+}
+.btn-whatsapp-fixed a{
+  color: #fff;
+}
