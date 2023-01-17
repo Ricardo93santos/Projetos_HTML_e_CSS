@@ -8,21 +8,63 @@
 :root{
   --bg-color: #F2F2F2;
   --primary-color: #000;
-  --secondary-color: #000;
-  --ternary-color: #000;
+  --secondary-color: #93D8E2;
+  --ternary-color: #2A7DA5;
   --text-fz-one: 1.1rem;
   --text-fz-two: 1.4rem;
   --text-fz-three: 1.7rem;
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
-body{
+.contener{
   display: grid;
-  gap: 15px;
-  grid-template-areas:
-  "header"
-  "main"
-  "footer"
+  height: 100vh;
+  border: 1px solid #000;
 }
-@media (max-width:425px) {
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-areas: 
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+  ;
+  gap: 10px;
+}
+#link1{    
+  grid-area: section1;
+}
+#link2{    
+  grid-area: section2;
+}
+#link3{    
+  grid-area: section3;
+}
+.capa{
+  background-image: url("https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+}
+.display-capa{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+}
+.texto-capa{
+  max-width: 90%;
+  padding: 0 5px;
+}
+.texto-capa h3{
+  background-color: var(--secondary-color);
+  color: var(--ternary-color);
+  width: 100%;
+}
+
+.texto-capa h1{
+  background-color: var(--ternary-color);
+  color: #fff;
+  width: 100%;
+}
+@media (min-width:425px) {
 
 }

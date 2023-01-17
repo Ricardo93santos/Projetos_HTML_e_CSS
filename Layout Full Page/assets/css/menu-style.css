@@ -5,7 +5,6 @@ header{
   align-items: center;
   background: var(--bg-color);
   display: flex;
-  grid-area: header;
   justify-content: space-around;
 }
 #logo{
@@ -18,7 +17,6 @@ header{
 }
 #menu ul{
   display: flex;
-  align-items: var(--links-position);
   justify-content: space-around;
   width: 100%;
 }
@@ -41,7 +39,7 @@ header{
   }
   #label-menu span{
     /*formatação geral dos spans*/
-    background: var(--secondary-color);
+    background: var(--primary-color);
     border-radius: 30px;
     display: block;
     height: 2px;
@@ -83,10 +81,8 @@ header{
     width: 100%;
   }
   #menu ul{
-    display: flex;
     flex-direction: column;
     align-items: var(--links-position);
-    width: 100%;
   }
   #menu li{
     margin: 10px 0;
