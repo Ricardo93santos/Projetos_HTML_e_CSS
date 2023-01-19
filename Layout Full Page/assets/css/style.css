@@ -19,10 +19,9 @@
 .contener{
   display: grid;
   height: 100vh;
-  border: 1px solid #000;
+  background-color: var(--bg-color);
 }
 main{
-  background-color: var(--bg-color);
   grid-area: main;
   display: grid;
   grid-template-areas: 
@@ -43,7 +42,8 @@ main{
 }
 .capa{
   background-image: url("https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .display-capa{
   display: flex;
@@ -78,6 +78,9 @@ main{
   font-size: var(--text-fz-one);
   font-weight: 100;
 }
-@media (min-width:425px) {
 
+@media (min-width:425px) {
+.capa{
+  background-attachment: fixed;
+}
 }
