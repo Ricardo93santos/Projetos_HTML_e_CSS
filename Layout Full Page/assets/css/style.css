@@ -17,28 +17,33 @@
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
 .contener{
+  padding-top: 75px;
   display: grid;
   height: 100vh;
   background-color: var(--bg-color);
+  width: 100%;
 }
 main{
-  grid-area: main;
   display: grid;
-  grid-template-areas: 
+  grid-template: 
     "section1 section1 section1"
     "section2 section2 section2"
     "section3 section3 section3"
+    "section4 section4 section4"
   ;
-  gap: 10px;
+  gap: 5px;
 }
-#link1{    
+#inicio{    
   grid-area: section1;
 }
-#link2{    
+#empresa{    
   grid-area: section2;
 }
-#link3{    
+#servicos{    
   grid-area: section3;
+}
+#clientes{
+  grid-area: section4;
 }
 .capa{
   background-image: url("https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -79,7 +84,7 @@ main{
   font-weight: 100;
 }
 
-@media (min-width:425px) {
+@media (min-width:768px) {
 .capa{
   background-attachment: fixed;
 }
