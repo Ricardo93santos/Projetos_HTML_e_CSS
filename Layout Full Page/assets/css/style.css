@@ -5,87 +5,74 @@
   text-decoration: none;
   list-style: none;
 }
+img{
+  width: 100%;
+}
 :root{
-  --bg-color: #F2F2F2;
-  --primary-color: #000;
-  --secondary-color: #93D8E2;
-  --ternary-color: #2A7DA5;
   --bt-whats-color: #61ce70;
+  --primary-color: #000;
   --text-fz-one: 1.1rem;
   --text-fz-two: 1.4rem;
   --text-fz-three: 1.7rem;
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
-.contener{
-  padding-top: 75px;
-  display: grid;
+.container{
+  max-width: 1200px;
   height: 100vh;
-  background-color: var(--bg-color);
-  width: 100%;
+  margin: 0 auto;
 }
-main{
-  display: grid;
-  grid-template: 
-    "section1 section1 section1"
-    "section2 section2 section2"
-    "section3 section3 section3"
-    "section4 section4 section4"
-  ;
-  gap: 5px;
-}
-#inicio{    
-  grid-area: section1;
-}
-#empresa{    
-  grid-area: section2;
-}
-#servicos{    
-  grid-area: section3;
-}
-#clientes{
-  grid-area: section4;
-}
-.capa{
-  background-image: url("https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.display-capa{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: end;
-}
-.texto-capa{
-  max-width: 90%;
-  padding: 0 5px;
-}
-.texto-capa h3{
-  background-color: var(--secondary-color);
-  color: var(--ternary-color);
-  width: 100%;
-  font-weight: 300;
-}
-.texto-capa h1{
-  background-color: var(--ternary-color);
-  color: #fff;
-  width: 100%;
-}
-.text-area{
+.flex-container{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-evenly;
   text-align: center;
-}
-.text-area p{
-  font-size: var(--text-fz-one);
-  font-weight: 100;
 }
 
-@media (min-width:768px) {
+/*Section 1*/
+
+#inicio{
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
 .capa{
-  background-attachment: fixed;
+  background-image: url(https://cdn.pixabay.com/photo/2014/10/08/20/52/cereals-480691_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  justify-content: end;
+}
+.capa div{
+  background-color: #3e91b8;
+  min-width: 40%;
+  height: 100px;
+  position: absolute;
+  bottom: 200px;
+  color: #fff;
+}
+.text-capa{
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+}
+
+/*Section 2*/
+#empresa{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.principios{
+  max-width: 300px;
+  padding: 20px;
+}
+@media (max-width:450px) {
+.capa div{
+  background-color: #ffffff00;
+}
+.text-capa{
+  max-width: 300px;
 }
 }

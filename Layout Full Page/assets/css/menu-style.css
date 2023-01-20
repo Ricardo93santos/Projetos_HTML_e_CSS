@@ -2,10 +2,9 @@
   display: none;
 }
 header{
-  position: fixed;
   width: 100%;
   align-items: center;
-  background: var(--bg-color);
+  background: var(--bg-color-primary);
   display: flex;
   justify-content: space-around;
 }
@@ -74,7 +73,7 @@ header{
     display: none;
   }
   #check:checked ~ #menu{
-    background: var(--bg-color);
+    background: var(--bg-color-primary);
     display: block;
     padding: 16px;
     position: absolute;
