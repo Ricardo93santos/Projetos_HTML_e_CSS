@@ -18,8 +18,8 @@ img{
 }
 .container{
   max-width: 1200px;
-  height: 100vh;
   margin: 0 auto;
+  height: 100vh;
 }
 .flex-container{
   display: flex;
@@ -29,8 +29,7 @@ img{
   text-align: center;
 }
 
-/*Section 1*/
-
+/*SECTION 1*/
 #inicio{
   justify-content: space-between;
   padding-bottom: 40px;
@@ -45,7 +44,6 @@ img{
   justify-content: end;
 }
 .capa div{
-  background-color: #3e91b8;
   min-width: 40%;
   height: 100px;
   position: absolute;
@@ -57,22 +55,45 @@ img{
   max-width: 400px;
   height: 200px;
 }
-
-/*Section 2*/
+/*SECTION 2*/
 #empresa{
+  background-color: #3e91b8;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+  width: 100%;
 }
 .principios{
-  max-width: 300px;
+  border: 3px solid #fff;
+  justify-content: space-around;
+  height: 400px;
+  width: 300px;
+  margin: 10px;
   padding: 20px;
 }
-@media (max-width:450px) {
-.capa div{
-  background-color: #ffffff00;
+.principios:nth-child(1){
+  max-height: 200px;
 }
-.text-capa{
-  max-width: 300px;
+.principios:nth-child(2){
+  max-height: 250px;
 }
+.principios:nth-child(3) ul li{
+  margin-left: 10px;
+  padding: 10px 0;
+  list-style: square;
+}
+@media (min-width:450px) {
+
+  /*SECTION 1*/
+  .capa div{
+    background-color: #3e91b8;
+  }
+  /*SECTION 2*/
+  #empresa{
+  height: 100vh;
+  }
+  .principios:nth-child(2){
+    max-height: 280px;
+  }
 }
