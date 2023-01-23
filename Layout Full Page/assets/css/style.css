@@ -131,6 +131,10 @@ img{
 @media (min-width:450px) {
 
   /*SECTION 1*/
+  
+  .capa{
+    background-attachment: fixed;
+  }
   .capa div{
     background-color: #3e91b8;
   }
@@ -146,8 +150,7 @@ img{
   .carousel-img{
     width: 750px;
   }
-  
-.carousel-btn i{
-  font-size: 3rem;
-}
+  .carousel-btn i{
+    font-size: 3rem;
+  }
 }
