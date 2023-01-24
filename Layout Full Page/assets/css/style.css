@@ -84,10 +84,7 @@ img{
 
 /*SECTION 3*/
 #servicos{
-  margin: 10px auto;
-  padding: 30px 10px;
   width: 100%;
-  gap: 2rem;
   height: 100vh;
 }
 .carousel{
