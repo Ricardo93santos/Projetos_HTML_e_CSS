@@ -129,7 +129,7 @@ img{
 /*SECTION 4*/
 #clientes{
   background-color: #3e91b8;
-  padding: 20px ;
+  padding: 35px ;
   width: 100%;
   gap: 1.5rem;
 }
@@ -138,25 +138,8 @@ img{
   gap: 1rem;
   align-items: flex-start;
 }
-.container-client-card{
-  max-width: 900px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.client-card{
-  padding: 10px;
-  border: 3px solid #fff;
-  align-items: flex-start;
-  gap: 1rem;
-  max-width: 310px;
-  text-align: justify;
-}
-.top-client-card{
-  width: 35%;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+.capa-clientes p{
+  font-size: 1.3rem;
 }
 @media (min-width:450px) {
 

@@ -1,0 +1,18 @@
+
+.container-client-card{
+  max-width: 900px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.client-card{
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+  gap: 1rem;
+  max-width: 350px;
+  height: 150px;
+}
+.client-card i{
+  font-size: 1.6rem;
+}
