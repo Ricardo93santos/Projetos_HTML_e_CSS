@@ -128,6 +128,8 @@ img{
   color: #3e91b8;
   font-size: 1.5rem;
 }
+
+
 @media (min-width:450px) {
 
   /*SECTION 1*/
@@ -139,9 +141,7 @@ img{
     background-color: #3e91b8;
   }
   /*SECTION 2*/
-  #empresa{
-  height: 100vh;
-  }
+
   .principios:nth-child(2){
     max-height: 280px;
   }
@@ -152,5 +152,10 @@ img{
   }
   .carousel-btn i{
     font-size: 3rem;
+  }
+}
+@media (min-width:1024px) {
+  #empresa{
+    height: 100vh;
   }
 }
