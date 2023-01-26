@@ -150,11 +150,11 @@ img{
 }
 .links-footer{
   justify-content: space-evenly;
-  width: 60%;
+  width: 70%;
   height: 450px;
 }
 .header-footer ul li, .list-social-media li{
-  padding: 5px;
+  padding: 8px;
 }
 .header-footer ul li a, .list-social-media li a{
   padding: 5px;
@@ -163,7 +163,7 @@ img{
 }
 .container-social-media{
   width: 100%;
-  height: 120px;
+  height: 150px;
   justify-content: space-between;
 }
 .container-copy{
@@ -200,7 +200,7 @@ img{
 
   /*FOOTER*/
   .footer{
-    height: 350px;
+    height: 300px;
   }
   .links-footer{
     flex-direction: row;
@@ -233,4 +233,9 @@ img{
     height: 100vh;
   }
 
+  /*FOOTER*/
+  
+  .links-footer{
+    width: 60%;
+  }
 }
