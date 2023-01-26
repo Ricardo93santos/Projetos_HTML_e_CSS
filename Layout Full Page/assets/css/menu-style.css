@@ -1,7 +1,7 @@
 #check{
   display: none;
 }
-header{
+.header-menu{
   width: 100%;
   align-items: center;
   background: var(--bg-color-primary);
@@ -26,7 +26,7 @@ header{
   font-size: var(--text-fz-two);
 }
 @media (max-width:450px) {
-  header{
+  .header-menu{
     justify-content: space-between;
   }
   #label-menu{
