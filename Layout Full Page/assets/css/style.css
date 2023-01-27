@@ -9,8 +9,11 @@ img{
   width: 100%;
 }
 :root{
+  --bg-color-primary: #3e91b8;
+  --bg-color-secondary: #fff;
   --bt-whats-color: #61ce70;
   --primary-color: #000;
+  --secondary-color: #3e91b8;
   --text-fz-one: 1.1rem;
   --text-fz-two: 1.4rem;
   --text-fz-three: 1.7rem;
@@ -57,7 +60,7 @@ img{
 }
 /*SECTION 2*/
 #empresa{
-  background-color: #3e91b8;
+  background-color: var(--bg-color-primary);
   flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
@@ -119,13 +122,13 @@ img{
   right: 5%;
 }
 .carousel-btn i{
-  color: #3e91b8;
+  color: var(--secondary-color);
   font-size: 1.5rem;
 }
 
 /*SECTION 4*/
 #clientes{
-  background-color: #3e91b8;
+  background-color: var(--bg-color-primary);
   padding: 35px ;
   width: 100%;
   gap: 1.5rem;
@@ -158,7 +161,7 @@ img{
 }
 .header-footer ul li a, .list-social-media li a{
   padding: 5px;
-  color: #000;
+  color: var(--primary-color);
   cursor: pointer;
 }
 .container-social-media{
@@ -182,7 +185,7 @@ img{
     background-attachment: fixed;
   }
   .capa div{
-    background-color: #3e91b8;
+    background-color: var(--bg-color-primary);
   }
 
   /*SECTION 2*/
