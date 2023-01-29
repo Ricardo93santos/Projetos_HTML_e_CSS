@@ -5,27 +5,25 @@ const slides = document.querySelectorAll(".carousel-img")
 const nextButton = document.getElementById("advance-button")
 const previousButton = document.getElementById("return-button")
 
+const lestSlidIndex = slides.length-1
 let currentSlideIndex = 0
+
+const manipulatSlidesClasses = currentSlideIndex =>{
+  slides.forEach(slide =>slide.classList.remove("show-carousel-img"))
+  slides[currentSlideIndex].classList.add("show-carousel-img")
+}
 
 nextButton.addEventListener("click", ()=>{
 
-  currentSlideIndex === slides.length-1 ? currentSlideIndex = 0 : currentSlideIndex++
+  const correctSlidIndex = currentSlideIndex === lestSlidIndex ? currentSlideIndex = 0 : ++currentSlideIndex
   
-  slides.forEach(slide =>{
-    slide.classList.remove("show-carousel-img")
-  })
-  
-  slides[currentSlideIndex].classList.add("show-carousel-img")
+  manipulatSlidesClasses(correctSlidIndex)
 })
 
 previousButton.addEventListener("click", ()=>{
   
-  currentSlideIndex === 0 ? currentSlideIndex = slides.length-1 : --currentSlideIndex
+  const correctSlidIndex = currentSlideIndex === 0 ? currentSlideIndex = lestSlidIndex : --currentSlideIndex
 
-  slides.forEach(slide =>{
-    slide.classList.remove("show-carousel-img")
-  })
-  slides[currentSlideIndex].classList.add("show-carousel-img")
-
+  manipulatSlidesClasses(correctSlidIndex)
 })
 

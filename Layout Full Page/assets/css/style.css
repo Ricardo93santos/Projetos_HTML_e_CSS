@@ -123,6 +123,7 @@ img{
   }
 }
 .carousel-btn{
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   width: 25px;
   height: 25px;
@@ -130,7 +131,7 @@ img{
   cursor: pointer;
 }
 #return-button{
-  left: 5%;
+  left: 3%;
   z-index: 2;
 }
 #advance-button{
