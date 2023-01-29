@@ -27,3 +27,10 @@ previousButton.addEventListener("click", ()=>{
   manipulatSlidesClasses(correctSlidIndex)
 })
 
+window.addEventListener("load",()=>{
+  setInterval(()=>{
+    const correctSlidIndex = currentSlideIndex === lestSlidIndex ? currentSlideIndex = 0 : ++currentSlideIndex
+    
+    manipulatSlidesClasses(correctSlidIndex)
+  }, 3000)
+})
