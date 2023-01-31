@@ -1,4 +1,7 @@
 .btn-whatsapp-floating{
+  display: none;
+}
+.show-btn-whatsapp-floating{
   position: fixed;
   background-color: var(--bt-whats-color);
   border-radius: 50%;
@@ -11,8 +14,9 @@
   line-height: 79px;
   font-size: 2.5em;
   font-weight: 100;
+  animation: showBtn 0.3s;
 }
-.btn-whatsapp-floating::after, .btn-whatsapp-floating::before{
+.show-btn-whatsapp-floating::after, .show-btn-whatsapp-floating::before{
   animation: animate 1.5s linear infinite;
   backface-visibility:hidden; 
   border: 1px solid var(--bt-whats-color);
@@ -42,8 +46,17 @@
     opacity: 0;
   }
 }
+@keyframes showBtn {
+  0%  {
+    opacity: 0;
+  }
+  100%  {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
-  .btn-whatsapp-floating{
+  .show-btn-whatsapp-floating{
     right: 25px;
     width: 55px;
     height: 55px;
