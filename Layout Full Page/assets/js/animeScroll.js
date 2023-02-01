@@ -1,8 +1,8 @@
 "use strict"
 
-const debounce = function(func, wait, immediate){
+const debounce = (func, wait, immediate) => {
   let timeout
-  return function(... args){
+  return (... args) =>{
     const context = this
     const later =function (){
       timeout = null
