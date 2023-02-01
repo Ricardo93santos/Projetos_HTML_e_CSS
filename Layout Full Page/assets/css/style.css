@@ -22,6 +22,24 @@ img{
   --text-fz-three: 1.7rem;
   --links-position: flex-end; /*center, flex-end, flex-start*/
 }
+/*Animação*/
+[data-anime]{
+  opacity: 0;
+  transition: 1.3s;
+}
+[data-anime="left"]{
+  transform: translate3d(-50px, 0, 0);
+}
+[data-anime="right"]{
+  transform: translate3d(50px, 0, 0);
+}
+[data-anime="top"]{
+  transform: translate3d(0, 50px, 0);
+}
+[data-anime].scrollAnimate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
