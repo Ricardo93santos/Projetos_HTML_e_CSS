@@ -1,5 +1,20 @@
 "use strict"
 
+const debounce = function(func, wait, immediate){
+  let timeout
+  return function(... args){
+    const context = this
+    const later =function (){
+      timeout = null
+      if(!immediate) func.apply(context, args)
+    }
+    const callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if(callNow) func.apply(context, args)
+  }
+}
+
 const btnWhatsapp = document.querySelector("#bt-whatsapp-floating")
 const targetAnimeScroll = document.querySelectorAll('[data-anime]')
 const animateScrollClass = 'scrollAnimate'
@@ -15,11 +30,12 @@ function animeScroll(targetAnimeScroll, animateScrollClass, windowTopSize, windo
 }
 
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", debounce(()=>{
   const windowTopSize = window.pageYOffset
   const windowHeightSize = (window.innerHeight * 3) / 4
 
   showBtnWhatsapp(btnWhatsapp, windowTopSize, windowHeightSize)
 
   animeScroll(targetAnimeScroll, animateScrollClass, windowTopSize, windowHeightSize)
-})
+
+}, 200))
