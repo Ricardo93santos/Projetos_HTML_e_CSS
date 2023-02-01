@@ -14,7 +14,7 @@
   line-height: 79px;
   font-size: 2.5em;
   font-weight: 100;
-  animation: showBtn 0.3s;
+  animation: showBtn 0.4s ease-in-out;
 }
 .show-btn-whatsapp-floating::after, .show-btn-whatsapp-floating::before{
   animation: animate 1.5s linear infinite;
@@ -50,8 +50,12 @@
   0%  {
     opacity: 0;
   }
-  100%  {
+  50% {
     opacity: 1;
+    bottom: 35px;
+  }
+  100%  {
+    bottom: 45px;
   }
 }
 

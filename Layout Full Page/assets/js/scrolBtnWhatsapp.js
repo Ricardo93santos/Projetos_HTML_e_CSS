@@ -1,13 +1,9 @@
 "use strict"
 
 const btnWhatsapp = document.querySelector("#bt-whatsapp-floating")
+  
+function showBtnWhatsapp(btnWhatsapp, windowHeigthSize){
 
-console.log(btnWhatsapp)
-
-
-
-function showBtnWhatsapp(btnWhatsapp){
-  const windowHeigthSize = window.pageYOffset
   if(windowHeigthSize >= 500){
     btnWhatsapp.classList.remove('btn-whatsapp-floating')
   }else{
@@ -17,5 +13,7 @@ function showBtnWhatsapp(btnWhatsapp){
 }
   
 window.addEventListener("scroll", ()=>{
-  showBtnWhatsapp(btnWhatsapp)
+  const windowHeigthSize = window.pageYOffset
+
+  showBtnWhatsapp(btnWhatsapp, windowHeigthSize)
 })
