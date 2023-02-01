@@ -2,18 +2,17 @@
 
 const btnWhatsapp = document.querySelector("#bt-whatsapp-floating")
   
-function showBtnWhatsapp(btnWhatsapp, windowHeigthSize){
-
-  if(windowHeigthSize >= 500){
+function showBtnWhatsapp(btnWhatsapp, windowTopSize, windowHeightSize){
+  if(windowTopSize >= windowHeightSize){
     btnWhatsapp.classList.remove('btn-whatsapp-floating')
   }else{
     btnWhatsapp.classList.add('btn-whatsapp-floating')
   }
-
 }
   
 window.addEventListener("scroll", ()=>{
-  const windowHeigthSize = window.pageYOffset
+  const windowTopSize = window.pageYOffset
+  const windowHeightSize = (window.innerHeight * 3) / 4
 
-  showBtnWhatsapp(btnWhatsapp, windowHeigthSize)
+  showBtnWhatsapp(btnWhatsapp, windowTopSize, windowHeightSize)
 })
