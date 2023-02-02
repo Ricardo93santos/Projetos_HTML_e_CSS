@@ -2,6 +2,12 @@
 #check{
   display: none;
 }
+.header-menu-fixed{
+  position: fixed;
+  background-color: var(--bg-color-secondary);
+  animation: position 0.5s ease-in-out;
+  z-index: 3;
+}
 .header-menu{
   font-family: var(--font-secondary);
   width: 100%;
@@ -26,6 +32,22 @@
 #menu li a{
   color: var(--secondary-color);
   font-size: var(--text-fz-two);
+}
+
+@keyframes position {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+    top: 2px;
+  }
+  50% {
+    top: 1px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 @media (max-width:450px) {
   .header-menu{
