@@ -1,7 +1,9 @@
+
 #check{
   display: none;
 }
 .header-menu{
+  font-family: var(--font-secondary);
   width: 100%;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -9,7 +11,7 @@
   justify-content: space-around;
 }
 #logo{
-  color: var(--primary-color);
+  color: var(--ternary-color);
   padding: 16px 20px;
   font-size: var(--text-fz-three);
 }
