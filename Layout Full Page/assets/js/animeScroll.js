@@ -2,9 +2,9 @@
 
 const debounce = (func, wait, immediate) => {
   let timeout
-  return (... args) =>{
+  return (... args) => {
     const context = this
-    const later =function (){
+    const later = () => {
       timeout = null
       if(!immediate) func.apply(context, args)
     }
@@ -30,7 +30,7 @@ function animeScroll(targetAnimeScroll, animateScrollClass, windowTopSize, windo
 }
 
 
-window.addEventListener("scroll", debounce(()=>{
+window.addEventListener("scroll", debounce(() => {
   const windowTopSize = window.pageYOffset
   const windowHeightSize = (window.innerHeight * 3) / 4
 
