@@ -19,89 +19,7 @@ body{
   "main"
   "footer";
   gap: 30px;
-}
-/*Início Header*/
-header{
-  align-items: center;
-  background: #ffffff;
-  display: flex;
-  grid-area: header;
-  justify-content: space-between;
-}
-#logo{
-  color: #CB9C57;
-  padding: 16px 20px;
-  font: 25px "Heebo";
-}
-#check{
-  display: none;
-}
-#label-menu{
-  cursor: pointer;
-  display: block;
-  height: 16px;
-  margin-right: 22px;
-  position: relative;
-  transition: .5s ease-in-out;
-  width: 25px;
-}
-#label-menu span{
-  background: #CB9C57;
-  border-radius: 30px;
-  display: block;
-  height: 2px;
-  position: absolute;
-  transition: .2s ease-in-out;
-  width: 100%;
-}
-#label-menu span:nth-child(1){
-  top: 0px;
-}
-#label-menu span:nth-child(2){
-  top: 8px;
-}
-#label-menu span:nth-child(3){
-  top: 16px;
-}
-#check:checked + #label-menu span:nth-child(1){
-  transform: rotate(-45deg);
-  top: 8px;
-}
-#check:checked + #label-menu span:nth-child(2){
-  display: none;
-}
-#check:checked + #label-menu span:nth-child(3){
-  transform: rotate(45deg);
-  top: 8px;
-}
-#menu{
-  display: none;
-}
-#check:checked ~ #menu{
-  background: #ffffff;
-  display: block;
-  padding: 16px;
-  position: absolute;
-  top: 70px;
-  text-align: right;
-  width: 100%;
-}
-#menu ul{
-  width: 100%;
-}
-#menu li{
-  margin: 10px 0;
-}
-#menu a{
-  color: #CB9C57;
-  padding: 10px 10px 0px 10px;
-  font: 16px "heebo";
-}
-#menu a:hover{
-  border-bottom: 2px solid #CB9C57;
-}
-/*Final Header*/
-/*Início Main*/
+}/*Início Main*/
 main{
   grid-area: main;
   display: grid;
@@ -221,24 +139,6 @@ footer{
 }
 /*Final Footer*/
 @media (min-width:450px){
-  #logo{
-    color: #CB9C57;
-    padding: 16px 20px;
-    font: 40px "Heebo";
-  }
-  #label-menu{
-    height: 22px;
-    margin-right: 33px;
-    width: 33px;
-  }
-  #label-menu span{
-    height: 3px;
-  }
-  #menu a{
-    color: #CB9C57;
-    padding: 10px 10px 0px 10px;
-    font: 25px "heebo";
-  }
   #redes img{
     width: 32px;
   }
@@ -247,29 +147,6 @@ footer{
   }
 }
 @media (min-width: 1024px){
-  #label-menu{
-    display: none;
-  }
-  #menu{
-    display: inline-block;
-  }
-  #menu ul{
-    width: 100%;
-  }
-  #menu li{
-    align-items: center;
-    margin: 10px 0;
-    display: inline-block;
-    padding-right: 20px;
-  }
-  #menu a{
-    color: #CB9C57;
-    font: 20px "heebo";
-  }
-  #menu a:hover{
-    color: #695330;
-    border-bottom: 2px solid #695330;
-  }
   #video{
     display: grid;
     grid-template-columns: 300px 600px;
