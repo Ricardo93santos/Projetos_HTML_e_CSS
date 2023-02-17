@@ -1,0 +1,297 @@
+/*Início Main*/
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "topo"
+  "sobre"
+  "org"
+  "hist"
+  "loc"
+  "cont";
+  gap: 30px;
+}
+#topo{
+  grid-area: topo;
+  background: url(../img/background1.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 104px 16px 134px;
+}
+#topo div{
+  background: rgba(63, 60, 60, 0.747);
+}
+#topo h2{
+  color:#ffffff;
+  font: 32px "Unna", serif;
+  padding: 16px;
+}
+#topo h4{
+  color: #ffffff;
+  font: 24px 'Unna', serif;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+#topo a{
+  background: #CB9C57;
+  color: #ffffff;
+  font: 13px "Open Sans", sans-serif;
+  padding: 10px 40px;
+}
+/**/
+#sobre{
+  grid-area: sobre;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "con1"
+  "img1"
+  "img2";
+}
+#img1{
+  grid-area: img1;
+  padding: 5px 15px;
+}
+#img2{
+  padding: 5px 15px;
+  grid-area: img2;
+}
+#con1{
+  grid-area: con1;
+  padding: 10px;
+}
+#con1 h3{
+  color: #000000;
+  font: 30px 'Unna', sans-serif;
+  padding: 10px;
+}
+#con1 p{
+  font: 14px "Open Sans", sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#con1 a{
+  background-color: #CB9C57;
+  color: #ffffff;
+  font: 13px "Open Sans", sans-serif;
+  padding: 10px 40px;
+  margin: 10px;
+}
+/**/
+#org{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "con2"
+  "con-img"
+  "a";
+  grid-area: org;
+  text-align: center;
+  padding: 40px 16px;
+}
+#con2{
+  grid-area: con2;
+}
+#org h2{
+  font: 30px "unna", serif;
+  padding: 10px;
+}
+#org p{
+  font: 14px "Open Sans", sans-serif;
+  padding: 10px;
+}
+#con-img{
+  grid-area: con-img;
+}
+#con-img img{
+  padding: 5px 0px;
+}
+#diva{
+  margin: 10px;
+  grid-area: a;
+}
+#org a{
+  background-color: #CB9C57;
+  color: #ffffff;
+  font: 13px "Open Sans", sans-serif;
+  padding: 10px 40px; 
+  margin: 0px 0px 16px; 
+}
+/**/
+#hist{
+  background: url(../img/background2.jpg) no-repeat fixed;
+  background-size: cover;
+  grid-area: hist;
+  padding: 40px 16px;
+}
+#hist div{
+  background: rgba(63, 60, 60, 0.747);
+  padding: 10px;
+}
+#hist p{
+  font: 16px "Open Sans", sans-serif;
+  margin: 15px 0px;
+  color: #ffffff;
+}
+#hist>p:nth-child(1){
+  text-transform: uppercase;
+}
+#hist h2{
+  font: 30px Unna, serif;
+  color: #ffffff;
+}
+/**/
+#loc{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "inde"
+  "map"
+  "img";
+  grid-area: loc;
+  gap: 25px;
+  padding: 40px 16px;
+}
+#inde{
+  grid-area: inde;
+}
+#inde h3{
+  color: #2e3538;
+  font: 30px 'Unna', sans-serif;
+  padding-bottom: 20px;
+}
+#inde p{
+  font: 14px "Open Sans", sans-serif;
+}
+#map{
+  grid-area: map;
+}
+#loc img{
+  grid-area: img;
+}
+/*Final Main*/
+@media (min-width:450px){
+  #topo div{
+    background: rgba(63, 60, 60, 0.747);
+    width: 500px;
+    padding: 10px;
+  }
+  #hist div{
+    background: rgba(102, 101, 101, 0.644);
+    width: 700px;
+    padding: 10px;
+  }
+  #sobre{
+    grid-area: sobre;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-areas: 
+    "img2 con1"
+    "img2 img1";
+    justify-content: center;
+    gap: 30px;
+  }
+  #img1{
+    grid-area: img1;
+    padding: 5px 15px;
+  }
+  #img2{
+    padding: 5px 15px;
+    grid-area: img2;
+  }
+  #con1{
+    grid-area: con1;
+    padding: 10px;
+  }
+  #con1 h3{
+    color: #000000;
+    font: 30px 'Unna', sans-serif;
+    padding: 10px;
+  }
+  #con1 p{
+    font: 14px "Open Sans", sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #con1 a{
+    background-color: #CB9C57;
+    color: #ffffff;
+    font: 13px "Open Sans", sans-serif;
+    padding: 10px 40px;
+    margin: 10px;
+  }
+  #org p{
+    font: 16px "Open Sans", sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+  }
+  #con-img{
+    grid-area: con-img;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-areas: 
+    "img4 img5"
+    "img6 img10"
+    "img7 img10"
+    "img8 img9";
+    gap: 20px;
+    justify-content: center;
+  }
+  .add{
+    padding: 10px;
+    font: 14px "Open Sans", sans-serif;
+  }
+  .img4{
+    grid-area: img4;
+  }
+  .img5{
+    grid-area: img5;
+  }
+  .img6{
+    grid-area: img6;
+  }
+  .img7{
+    grid-area: img7;
+  }
+  .img8{
+    grid-area: img8;
+  }
+  .img9{
+    grid-area: img9;
+  }
+  .img10{
+    grid-area: img10;
+  }
+  .img{
+    padding: 5px 0px;
+  }
+  #loc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "inde inde"
+    "img map";
+    grid-area: loc;
+    gap: 25px;
+    padding: 40px 16px;
+    justify-content: center;
+  }
+  #inde{
+    grid-area: inde;
+  }
+  #inde h3{
+    color: #2e3538;
+    font: 30px 'Unna', sans-serif;
+    padding-bottom: 20px;
+  }
+  #inde p{
+    font: 14px "Open Sans", sans-serif;
+  }
+  #map{
+    grid-area: map;
+  }
+  #loc img{
+    grid-area: img;
+  }
+}

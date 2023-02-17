@@ -1,25 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;700&family=Open+Sans:ital@1&family=Unna:wght@400;700&display=swap');
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Heebo', 'Open Sans', 'Unna', serif, sans-serif; 
-  color: #000000;
-}
-img{
-  width: 100%;
-}
-body{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer";
-  gap: 30px;
-}/*Início Main*/
+/*Início Main*/
 main{
   grid-area: main;
   display: grid;
@@ -100,97 +79,8 @@ main{
   padding: 5px 0px;
 }
 /**/
-#cont{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-  "h3"
-  "redes"
-  "form";
-  grid-area: cont;
-}
-#cont h3{
-  grid-area: h3;
-  font: 30px "Unna", serif;
-  padding: 30px 20px;
-}
-#redes{
-  grid-area: redes;
-  display: flex;
-  justify-content: space-around;
-  margin: 0px 0px 26px;
-}
-#redes img{
-  width: 26px;
-}
-#form{
-  grid-area: form;
-  padding: 30px 20px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: 
-  "col1"
-  "col2"
-  "col3"
-  "col4"
-  "enviar";
-  gap: 25px;
-}
-.col1{
-  grid-area: col1;
-}
-.col2{
-  grid-area: col2;
-}
-.col3{
-  grid-area: col3;
-}
-.col4{
-  grid-area: col4;
-}
-#form label{
-  color: #CB9C57;
-  font: 16px "Open Sans", sans-serif;
-  display: inline-block;
-}
-#form input[type="text"], #form textarea{
-  background: #E3E3E3;
-  border: none;
-  padding: 16px 56px 16px 16px;
-  resize: none;
-  overflow: none;
-  width: 100%;
-}
-input[type="submit"]{
-  color: #ffffff;
-  cursor: pointer;
-  background: #CB9C57;
-  border: #CB9C57;
-  font: 16px "Open Sans", sans-serif;
-  grid-area: enviar;
-  outline: none;
-  padding: 15px 50px;
-  text-align: center;
-  width: 150px;
-}
-#endereco{
-  padding: 10px;
-}
 /*Final Main*/
-/*Início Footer*/
-footer{
-  grid-area: footer;
-  padding: 0px 0px 20px 20px;
-}
-/*Final Footer*/
-@media (min-width:450px){
-  #redes img{
-    width: 32px;
-  }
-  #endereco{
-    padding: 10px;
-  }
-}
+
 @media (min-width: 1024px){
   #topo div{
     margin: 0 auto;
@@ -241,49 +131,5 @@ footer{
     font: 13px "Open Sans", sans-serif;
     padding: 10px 40px;
     margin: 10px;
-  }
-  #cont{
-    display: grid;
-    grid-template-columns: 350px 600px;
-    grid-template-areas:
-    "h3 h3"
-    "endereco form"
-    "redes form";
-    grid-area: cont;
-    justify-content: center;
-    gap: 30px;
-  }
-  .endereco{
-    grid-area: endereco;
-  }
-  .add{
-    padding: 10px;
-    font: 14px "Open Sans", sans-serif;
-  }
-  #redes{
-    grid-area: redes;
-    display: grid;
-    grid-template-columns: 36px 36px;
-    grid-template-areas: 
-    "lin twi"
-    "ins fac";
-    padding: 50px 35px;
-    justify-content: start;
-    gap: 40px;
-  }
-  #redes img{
-    width: 30px;
-  }
-  #resde [alt="linkedin"]{
-    grid-area: lin;
-  }
-  #resde [alt="twitter"]{
-    grid-area: twi;
-  }
-  #resde [alt="instagram"]{
-    grid-area: ins;
-  }
-  #resde [alt="facebook"]{
-    grid-area: fac;
   }
 }
